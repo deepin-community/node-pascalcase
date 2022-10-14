@@ -1,0 +1,25 @@
+Source: node-pascalcase
+Section: web
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Build-Depends:
+ debhelper (>= 9)
+ , dh-buildinfo
+ , nodejs
+ , mocha
+ , node-should
+Standards-Version: 3.9.8
+Homepage: https://github.com/jonschlinkert/pascalcase
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-pascalcase.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-pascalcase.git
+
+Package: node-pascalcase
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Description: Convert a string to pascal-case
+ For more info see /usr/share/doc/node-pascalcase/README.md
+ .
+ Node.js is an event-based server-side JavaScript engine.

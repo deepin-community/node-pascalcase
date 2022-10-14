@@ -1,0 +1,6 @@
+Tests: require
+Depends: node-pascalcase
+
+Test-Command: mocha
+Depends: @, mocha, node-should
+
