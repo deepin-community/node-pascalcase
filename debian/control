@@ -1,24 +1,23 @@
 Source: node-pascalcase
-Section: web
+Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Sruthi Chandran <srud@disroot.org>
-Build-Depends:
- debhelper (>= 9)
- , dh-buildinfo
- , nodejs
- , mocha
- , node-should
-Standards-Version: 3.9.8
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , mocha <!nocheck>
+ , node-should <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-pascalcase
+Vcs-Git: https://salsa.debian.org/js-team/node-pascalcase.git
 Homepage: https://github.com/jonschlinkert/pascalcase
-Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-pascalcase.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-pascalcase.git
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-pascalcase
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: Convert a string to pascal-case
  For more info see /usr/share/doc/node-pascalcase/README.md
  .
